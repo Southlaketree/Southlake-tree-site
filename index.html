@@ -3,153 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO: Primary Title and Meta Description -->
-    <title>Southlake Tree Rescue | 24/7 Emergency Tree Removal</title>
-    <meta name="description" content="Southlake's premier emergency tree removal and storm damage clearing service. We navigate Southlake Ordinance 585-E for you. Fast, insured, 24/7 dispatch.">
-    
-    <!-- SEO: Local Business Schema Markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Southlake Tree Rescue",
-      "description": "24/7 Emergency Tree Removal and Storm Damage Dispatch serving Southlake, TX.",
-      "areaServed": "Southlake, TX",
-      "telephone": "(817) 555-0199",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Southlake",
-        "addressRegion": "TX",
-        "addressCountry": "US"
-      }
-    }
-    </script>
-
+    <title>Southlake Tree Rescue | Emergency Tree Removal & Storm Response</title>
+    <meta name="description" content="24/7 Emergency tree removal in Southlake, TX. Technical structural failure response for oaks and DFW clay uprooting.">
     <style>
         :root {
-            --primary: #0f3b26; /* Deep forest green */
-            --secondary: #c62828; /* Urgent red */
-            --accent: #f5a623; /* Trust/Warning orange */
-            --light: #f9f9f9;
-            --dark: #1a1a1a;
+            --primary-red: #D32F2F;
+            --dark-bg: #1A1A1A;
+            --text-light: #F5F5F5;
+            --text-dark: #333333;
         }
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', system-ui, sans-serif; }
-        body { line-height: 1.6; color: var(--dark); background: var(--light); }
-        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #fcfcfc;
+        }
         /* Ghost Mode Banner */
-        .ghost-banner { background: var(--secondary); color: white; text-align: center; padding: 12px 20px; font-weight: 700; font-size: 0.95rem; }
-        
-        /* Header */
-        header { background: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
-        .logo { font-size: 1.5rem; font-weight: 900; color: var(--primary); text-transform: uppercase; letter-spacing: -0.5px; }
-        
+        .ghost-banner {
+            background-color: #FF9800;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
         /* Hero Section */
-        .hero { background: linear-gradient(rgba(15, 59, 38, 0.9), rgba(15, 59, 38, 0.9)), url('https://images.unsplash.com/photo-1590682680695-43b964a3ae17?auto=format&fit=crop&w=1600&q=80') center/cover; color: white; padding: 100px 20px; text-align: center; }
-        .hero h1 { font-size: 3rem; margin-bottom: 20px; line-height: 1.1; max-width: 900px; margin-inline: auto; }
-        .hero p { font-size: 1.25rem; margin-bottom: 35px; color: #e0e0e0; max-width: 700px; margin-inline: auto; }
-        .btn-call { display: inline-block; background: var(--secondary); color: white; padding: 20px 40px; text-decoration: none; font-size: 1.5rem; font-weight: 900; border-radius: 8px; box-shadow: 0 6px 15px rgba(198, 40, 40, 0.4); transition: transform 0.2s; }
-        .btn-call:hover { transform: translateY(-2px); }
-        .trust-badges { display: flex; justify-content: center; gap: 15px; margin-top: 40px; flex-wrap: wrap; }
-        .badge { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); padding: 10px 20px; border-radius: 5px; font-weight: 700; }
-
-        /* Southlake Ordinance SEO Block */
-        .ordinance-block { background: var(--accent); color: var(--dark); padding: 40px 20px; text-align: center; font-weight: 600; }
-        .ordinance-block h2 { font-size: 1.8rem; margin-bottom: 15px; }
-
-        /* Services */
-        .services { padding: 80px 20px; max-width: 1200px; margin: auto; }
-        .services h2 { text-align: center; margin-bottom: 50px; font-size: 2.5rem; color: var(--primary); }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .card { background: white; padding: 40px 30px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); border-top: 5px solid var(--primary); }
-        .card h3 { color: var(--primary); margin-bottom: 15px; font-size: 1.4rem; }
-
-        /* Contact Form (Ghost Mode) */
-        .contact { background: white; padding: 80px 20px; }
-        .form-container { max-width: 600px; margin: auto; background: var(--light); padding: 40px; border-radius: 10px; border: 1px solid #eee; }
-        .form-container h2 { text-align: center; margin-bottom: 30px; color: var(--primary); }
-        input, textarea { width: 100%; padding: 15px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; background: #e9ecef; cursor: not-allowed; }
-        button { width: 100%; background: #6c757d; color: white; border: none; padding: 18px; font-size: 1.2rem; font-weight: bold; cursor: not-allowed; border-radius: 5px; }
-
-        /* Legal Footer */
-        footer { background: var(--dark); color: #999; padding: 60px 20px; font-size: 0.85rem; line-height: 1.8; }
-        .footer-content { max-width: 1200px; margin: auto; text-align: center; }
-        .legal-disclaimer { margin-top: 30px; padding-top: 30px; border-top: 1px solid #333; text-align: justify; }
-        
-        @media(max-width: 768px) {
-            .hero h1 { font-size: 2.2rem; }
-            .btn-call { font-size: 1.2rem; width: 100%; }
-            header { flex-direction: column; gap: 15px; text-align: center; }
+        header {
+            background: linear-gradient(rgba(26, 26, 26, 0.9), rgba(26, 26, 26, 0.9)), url('https://via.placeholder.com/1920x1080?text=Storm+Damage') center/cover;
+            color: var(--text-light);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 5px solid var(--primary-red);
+        }
+        .logo-placeholder {
+            font-size: 2rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            color: var(--primary-red);
+        }
+        .hero-btn {
+            display: inline-block;
+            background-color: #555; /* Greyed out for Ghost Mode */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: not-allowed; /* Ghost Mode Cursor */
+        }
+        /* Content Silos */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        h2 {
+            color: var(--dark-bg);
+            border-bottom: 2px solid var(--primary-red);
+            padding-bottom: 10px;
+            margin-top: 2rem;
+        }
+        h3 {
+            color: var(--primary-red);
+        }
+        .engineering-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+        .silo-link {
+            display: inline-block;
+            margin-top: 15px;
+            color: var(--primary-red);
+            font-weight: bold;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.2s;
+        }
+        .silo-link:hover {
+            border-bottom: 2px solid var(--primary-red);
+        }
+        /* Footer & Legal */
+        footer {
+            background-color: var(--dark-bg);
+            color: #999;
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.8rem;
         }
     </style>
 </head>
 <body>
 
+    <!-- GHOST MODE BANNER -->
     <div class="ghost-banner">
-        Notice: We are currently at maximum capacity and not accepting new emergency dispatch requests at this time.
+        NOTICE: Due to severe weather volume in Tarrant County, our dispatch grid is currently at maximum capacity. We are not accepting new emergency requests at this time.
     </div>
 
+    <!-- HERO SECTION -->
     <header>
-        <div class="logo">Southlake Tree Rescue</div>
-        <a href="#" class="btn-call" onclick="alert('Dispatch system temporarily down for maintenance.'); return false;">(817) 555-0199</a>
+        <div class="logo-placeholder">Southlake Tree Rescue // STORM STRIKE</div>
+        <h1>Rapid Structural Failure & Canopy Collapse Response</h1>
+        <p>Engineered hazard mitigation for Southlake, Westover Hills, and the DFW Metroplex.</p>
+        <!-- Disabled Button for Ghost Mode -->
+        <a href="#" class="hero-btn" onclick="return false;">DISPATCH UNAVAILABLE (555) 000-0000</a>
     </header>
 
-    <section class="hero">
-        <h1>24/7 Emergency Tree Removal in Southlake, TX</h1>
-        <p>Immediate dispatch for storm damage, fallen oaks, and hazardous limbs. Fully insured heavy crane operations.</p>
-        <a href="#" class="btn-call" onclick="alert('Dispatch system temporarily down for maintenance.'); return false;">Tap to Call: (817) 555-0199</a>
+    <div class="container">
         
-        <div class="trust-badges">
-            <span class="badge">✓ Licensed & Insured Crews</span>
-            <span class="badge">✓ 24/7 Storm Response</span>
-            <span class="badge">✓ Southlake Code Compliant</span>
-        </div>
-    </section>
-
-    <!-- SEO Power Play: Local Ordinance Reference -->
-    <section class="ordinance-block">
-        <h2>We Handle Southlake Ordinance No. 585-E</h2>
-        <p>Did you know Southlake protects trees as small as 2 inches in diameter? Our crews understand local mitigation laws and will ensure your emergency removal is fully compliant with City of Southlake codes.</p>
-    </section>
-
-    <section class="services">
-        <h2>Specialized Heavy Removal Services</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Emergency Storm Damage</h3>
-                <p>Texas storms drop massive branches on roofs and driveways. We provide immediate tarping, clearing, and hazard stabilization.</p>
-            </div>
-            <div class="card">
-                <h3>Crane-Assisted Removal</h3>
-                <p>For dead Post Oaks or Pecan trees trapped in tight residential backyards. Zero-impact removal protects your landscaping and foundation.</p>
-            </div>
-            <div class="card">
-                <h3>Hazardous & Deadwood Clearing</h3>
-                <p>Proactive removal of diseased or leaning trees before they fail during the next high-wind event.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact">
-        <div class="form-container">
-            <h2>Request an Estimate (Currently Offline)</h2>
-            <form action="javascript:void(0);" onsubmit="alert('Dispatch system temporarily down.');">
-                <input type="text" placeholder="Full Name" disabled>
-                <input type="text" placeholder="Southlake Property Address" disabled>
-                <textarea rows="4" placeholder="Describe the tree issue..." disabled></textarea>
-                <button type="submit" disabled>Submit Request</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 Southlake Tree Rescue. All Rights Reserved.</p>
+        <!-- SILO: ENGINEERING & SOIL MECHANICS -->
+        <div class="engineering-box">
+            <h2>The Mechanics of Root Plate Failure in DFW</h2>
+            <p>North Texas urban forestry is uniquely vulnerable to catastrophic failure due to the geological composition of <strong>Houston Black clay</strong>. When Southlake experiences rapid, heavy rainfall following periods of drought, this expansive clay undergoes severe volumetric changes.</p>
             
-            <!-- Critical Rank & Rent Legal Firewall -->
-            <div class="legal-disclaimer">
-                <strong>Legal Disclaimer & Terms of Service:</strong> SouthlakeTreeRescue.com operates as a free, independent lead generation and dispatch routing service. We are not a licensed tree care provider, arborist, or landscaping company. All physical tree removal, climbing, crane operations, and consultations are performed by independent, fully licensed, and insured third-party contractors. By using this site or calling our dispatch number, you acknowledge that Southlake Tree Rescue and its owners hold no liability for property damage, personal injury, structural issues, or contractor negligence that may occur during the estimation or removal process. It is the responsibility of the property owner to verify the contractor's insurance credentials and ensure compliance with Southlake Tree Preservation Ordinance No. 585-E prior to authorizing any tree alteration or removal.
-            </div>
+            <h3>Hydrostatic Pressure and Soil Saturation</h3>
+            <p>Mature trees rely on soil friction against their root systems to remain upright. As rainwater saturates the DFW clay, the soil expands and loses its sheer strength. The introduction of <strong>hydrostatic pressure</strong> essentially lubricates the root plate. During a severe storm, wind shear acting on the canopy creates a lever effect. Without soil friction to anchor the roots, the entire root plate shears loose, resulting in a sudden, massive uprooting event that can destroy foundations and structures.</p>
+            
+            <a href="/emergency-removal/soil-saturation-dfw-clay.html" class="silo-link">Read the full technical analysis on DFW Clay Soil Saturation &rarr;</a>
+            
+            <br><br>
+
+            <h3>Tensile Limits of Native Texas Oaks</h3>
+            <p>While native species like <strong>Live Oaks</strong> and <strong>Post Oaks</strong> are structurally dense, they frequently suffer from co-dominant stems (V-crotches) with included bark. Under high wind shear—specifically the micro-bursts common to Tarrant County spring storms—these structural unions experience extreme tensile stress.</p>
+            <ul>
+                <li><strong>Torsional Loading:</strong> Twisting forces on asymmetric canopies cause sudden longitudinal cracking.</li>
+                <li><strong>Heart Rot Acceleration:</strong> Undetected internal decay drastically reduces the modulus of rupture, causing limbs to snap below maximum wind thresholds.</li>
+                <li><strong>Dynamic Amplification:</strong> Wind gusts matching the natural sway frequency of the oak cause exponential stress on the trunk base.</li>
+            </ul>
+
+            <a href="/emergency-removal/wind-shear-oak-failure.html" class="silo-link">Read the full structural breakdown of Texas Oak Wind Shear Limits &rarr;</a>
         </div>
+
+        <!-- SILO: LOCAL CODES & LIABILITY -->
+        <div class="engineering-box">
+            <h2>Southlake & Tarrant County Emergency Debris Codes</h2>
+            <p>Following a catastrophic canopy collapse, rapid hazard mitigation must adhere to strict municipal guidelines. Understanding local ordinances prevents fines and ensures safe extraction.</p>
+            
+            <h3>Right-of-Way and Utility Clearances</h3>
+            <p>If a structural failure results in timber crossing public rights-of-way or power lines, strict protocols apply:</p>
+            <ul>
+                <li><strong>Oncor Proximity Limits:</strong> Any vegetation within 10 feet of active transmission lines requires specialized line-clearance arborists. Standard landscapers are legally prohibited from extracting this timber.</li>
+                <li><strong>Tarrant County Right-of-Way:</strong> Debris blocking municipal roadways must be cleared to the property line. Homeowners are liable for the cost of extraction if the tree originated on their parcel.</li>
+                <li><strong>FEMA Staging:</strong> During declared disasters in Southlake, debris must be bucked and staged according to city cubic-yard restrictions for municipal pickup.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- LEGAL DISCLAIMER (RANK & RENT PROTECTION) -->
+    <footer>
+        <p><strong>Legal Disclaimer & Terms of Service</strong></p>
+        <p>Southlake Tree Rescue operates strictly as a free digital matching service connecting homeowners with independent, licensed, and insured local tree care professionals. We do not directly perform tree services, removal, or structural engineering assessments. By using this site or calling the listed number, you agree that Southlake Tree Rescue, its owners, and its affiliates hold zero liability for property damage, personal injury, or service disputes. All contracts, warranties, and physical work are strictly between the homeowner and the dispatched independent contractor. Use of this site constitutes acceptance of our full Terms of Service.</p>
+        <p>&copy; 2026 Southlake Tree Rescue. All Rights Reserved.</p>
     </footer>
 
 </body>
