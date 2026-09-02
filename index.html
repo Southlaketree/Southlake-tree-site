@@ -113,8 +113,15 @@
         button { width: 100%; background: #6c757d; color: white; border: none; padding: 18px; font-size: 1.2rem; font-weight: bold; cursor: not-allowed; border-radius: 5px; }
         footer { background: var(--dark); color: #999; padding: 60px 20px; font-size: 0.85rem; line-height: 1.8; }
         .footer-content { max-width: 1200px; margin: auto; text-align: center; }
-        .legal-disclaimer { margin-top: 30px; padding-top: 30px; border-top: 1px solid #333; text-align: justify; }
+        .legal-disclaimer { margin-top: 30px; padding-top: 30px; border-top: 1px solid #333; text-align: justify; } 
         
+        /* New Trust Signal: Service Area Map */
+.service-area { background: var(--dark); color: white; padding: 80px 20px; text-align: center; }
+.service-area h2 { color: var(--accent); margin-bottom: 20px; font-size: 2.5rem; }
+.service-area p { margin-bottom: 40px; font-size: 1.1rem; max-width: 700px; margin-inline: auto; color: #ccc; }
+.map-container { max-width: 1000px; margin: auto; border-radius: 10px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 4px solid var(--primary); background: #333; }
+.map-container iframe { width: 100%; height: 450px; border: 0; display: block; filter: contrast(1.1); }
+
         @media(max-width: 768px) { .hero h1 { font-size: 2.2rem; } .btn-call { font-size: 1.2rem; width: 100%; } header { flex-direction: column; gap: 15px; text-align: center; } .ordinance-wrapper { grid-template-columns: 1fr; } }
     </style>
 </head>
@@ -216,6 +223,15 @@
             <p>Absolutely. Every contractor in our network is strictly vetted and required to carry a minimum of $1,000,000 in general liability insurance and active workers' compensation before they can receive dispatch calls.</p>
         </details>
     </section>
+    
+<section class="service-area">
+    <h2>Local Dispatch Territory</h2>
+    <p>We provide priority 24/7 emergency response to the Tarrant County tri-city area: <strong>Southlake, Colleyville, and Westlake</strong>. If your property is within this zone, our dispatched partner crews can typically be on-site within 45 to 60 minutes for hazard assessment.</p>
+    <div class="map-container">
+        <!-- Google Maps Embed centered on the tri-city area -->
+        <iframe src="https://maps.google.com/maps?q=Southlake,+TX&t=&z=12&ie=UTF8&iwloc=&output=embed" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" title="Southlake Tree Rescue Service Area Map"></iframe>
+    </div>
+</section>
 
     <section class="contact">
         <div class="form-container">
